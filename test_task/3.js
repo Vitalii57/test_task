@@ -43,9 +43,14 @@ getRequest("GET", requestURL)
       allName[i].style.background = "blue";
     }
 
-    allSymbol.forEach((el) => {
+    allSymbol.forEach((el, index) => {
+      // let positionEl;
+
       if (el.textContent == "usdt") {
         el.style.background = "green";
+        console.log(index);
+        allId[index].style.background = "green";
+        allName[index].style.background = "green";
       }
     });
   })
