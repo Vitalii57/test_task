@@ -1,4 +1,3 @@
-const usersList = document.querySelector(".users__list");
 const id = document.querySelector(".container__text-id");
 const symbol = document.querySelector(".container__text-symbol");
 const usName = document.querySelector(".container__text-name");
@@ -44,11 +43,8 @@ getRequest("GET", requestURL)
     }
 
     allSymbol.forEach((el, index) => {
-      // let positionEl;
-
       if (el.textContent == "usdt") {
         el.style.background = "green";
-        console.log(index);
         allId[index].style.background = "green";
         allName[index].style.background = "green";
       }
